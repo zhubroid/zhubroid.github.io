@@ -1,7 +1,7 @@
 {
 "companyName": "Zhubroid",
 "productName": "SolarSystem_Course1Week2",
-"productVersion": "0.1",
+"productVersion": "1.0",
 "dataUrl": "SolarSystem.data.unityweb",
 "wasmCodeUrl": "SolarSystem.wasm.code.unityweb",
 "wasmFrameworkUrl": "SolarSystem.wasm.framework.unityweb",
@@ -12,5 +12,5 @@
 "cacheControl": {"default": "must-revalidate"},
 "developmentBuild": false,
 "multithreading": false,
-"unityVersion": "2019.2.4f1"
+"unityVersion": "2019.4.10f1"
 }
