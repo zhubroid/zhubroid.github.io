@@ -11,10 +11,25 @@ h1 {
   color: #3d3d40;
   text-align: center;
 }
-h2 {
+span {
+  border:2px solid Tomato;
+  border-radius:3px;
+  background-color:#6D5954;
+  line-height:1.5;
+}
+a {
+  background-color:#B38F50;
+  border:8px solid rgba(83,87,84,.9);
+  font-size:130%;
+  border-radius:24px;
+  text-align:center;
+}
+.h2-mimic {
   color: Tomato;
   line-height: 1;
   text-align: center;
+  font-size: 150%;
+  font-style: bold;
 }
 .grid-container-top {
   display: grid;
@@ -22,24 +37,25 @@ h2 {
 }
 .image-left {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/Simple_Ornament_Gold_D.png");
-  background-repeat: repeat no-repeat;
-  background-position: top;
-  background-size: auto 50%;
+  background-repeat: x-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  transform: scaleY(-1);
 }
 .image-right {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/Simple_Ornament_Gold_D.png");
-  background-repeat: repeat no-repeat;
-  background-position: top;
-  background-size: auto 50%;
-  transform: scaleX(-1);
+  background-repeat: x-repeat;
+  background-position: left;
+  background-size: auto 100%;
+  transform: scaleY(-1);
 }
 .grid-container-bottom {
   display: grid;
   grid: auto / 0.5fr auto 0.5fr;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/Simple_Ornament_Gold_D.png");
   background-repeat: x-repeat;
-  background-position: center;
-  background-size: auto 100%;
+  background-position: top;
+  background-size: auto 50%;
 }
 </style>
 
@@ -53,20 +69,21 @@ h2 {
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>ANCIENT RUINS</h2></div>
+  <div class="h2-mimic">ANCIENT RUINS</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;border-radius:3px;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;2D&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Vertical Scroller&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Random Generation&nbsp;
 </span>
 <br>You are an unlucky adventurer who have been trapped with no means to escape.
@@ -75,30 +92,31 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/AncientRuins/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/AncientRuins/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>APOCALIPTIA</h2></div>
+  <div class="h2-mimic">APOCALIPTIA</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Action&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Survival&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Horror&nbsp;
 </span>
 <br>You're one of the survival mages in post apocalyptic world.
@@ -108,36 +126,37 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/Apocaliptia/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/Apocaliptia/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>BLOOD ELEMENT</h2></div>
+  <div class="h2-mimic">BLOOD ELEMENT</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Action&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Survival&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Open World&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Death and Destruction&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Random Generation&nbsp;
 </span>
 <br>You have a rare disease and you're constanly leaking blood.
@@ -146,27 +165,28 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/BloodElement/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/BloodElement/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>CAT COLORING</h2></div>
+  <div class="h2-mimic">CAT COLORING</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Economics&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Coloring&nbsp;
 </span>
 <br>You're a swindler mage.<br>Use your coloring magic to make easy coins.
@@ -176,30 +196,31 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/CatColoring/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/CatColoring/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>EGGRUN</h2></div>
+  <div class="h2-mimic">EGGRUN</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Horizontal Scroller&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Chaos&nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Random Generation&nbsp;
 </span>
 <br>You're an egg prophet.
@@ -208,39 +229,40 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/EggRun/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/EggRun/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>FALLING DOWN</h2></div>
+  <div class="h2-mimic">FALLING DOWN</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Adventure &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Puzzle &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Survival &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Levels &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Score &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Different Complexities&nbsp;
 </span>
 <br>FallingDown - score
@@ -248,30 +270,31 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/FallingDown/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/FallingDown/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>GET IT OUT</h2></div>
+  <div class="h2-mimic">GET IT OUT</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Antistress &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Simulator &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Random Generation&nbsp;
 </span>&nbsp;
 <br>GetItOut - small fixes
@@ -279,33 +302,34 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/GetItOut/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/GetItOut/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>GOD SPACE</h2></div>
+  <div class="h2-mimic">GOD SPACE</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Orbit Simulator &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Timed &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Different Complexities &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Random Generation&nbsp;
 </span>&nbsp;
 <br>GodSpace - fix
@@ -313,36 +337,37 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/GodSpace/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/GodSpace/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>LOVE STONE</h2></div>
+  <div class="h2-mimic">LOVE STONE</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Search &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Puzzle &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Simulator &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Different Complexities &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Random Generation&nbsp;
 </span>&nbsp;
 <br>LoveStone - Force fix
@@ -350,33 +375,34 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/LoveStone/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/LoveStone/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
+<br>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>SPACE EXPLORER 3D</h2></div>
+  <div class="h2-mimic">SPACE EXPLORER 3D</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;2D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Space Rocket Simulator &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Exploration &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Survival &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Random Generation&nbsp;
 </span>&nbsp;
 <br>SpaceExplorer3D - basic changes
@@ -384,30 +410,30 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/SpaceExplorer3D/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/SpaceExplorer3D/">PLAY</a></div>
   <div></div>
 </div>
-<hr>
+<br>
 
 
 
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>ZOMBIE DUNGEON</h2></div>
+  <div class="h2-mimic">ZOMBIE DUNGEON</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;2D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Shooter &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Labyrinth &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Random Generation&nbsp;
 </span>&nbsp;
 <br>ZombieDungeon - restart and score
@@ -415,7 +441,7 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/ZombieDungeon/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/ZombieDungeon/">PLAY</a></div>
   <div></div>
 </div>
 <hr>
@@ -424,18 +450,18 @@ h2 {
 
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>HUNTER GAME</h2></div>
+  <div class="h2-mimic">HUNTER GAME</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;2 Players - 1 Seat &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Hide and Seak&nbsp;
 </span>&nbsp;
 <br>HunterGame - Two player shit
@@ -443,7 +469,7 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/HunterGame/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/HunterGame/">PLAY</a></div>
   <div></div>
 </div>
 <hr>
@@ -452,18 +478,18 @@ h2 {
 
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>LOCKED DOOR</h2></div>
+  <div class="h2-mimic">LOCKED DOOR</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;2D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Antistress &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Clicker&nbsp;
 </span>&nbsp;
 <br>LockedDoor
@@ -471,7 +497,7 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/LockedDoor/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/LockedDoor/">PLAY</a></div>
   <div></div>
 </div>
 <hr>
@@ -480,18 +506,18 @@ h2 {
 
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>ISLAND TRIP</h2></div>
+  <div class="h2-mimic">ISLAND TRIP</div>
   <div class="image-right"></div>
 </div>
 
 <p>
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;3D &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Points collection &nbsp;
 </span>&nbsp;
-<span style="border:2px solid Tomato;background-color:#6D5954;line-height:1.5;">
+<span>
 &nbsp;Puzzle&nbsp;
 </span>&nbsp;
 <br>IslandTrip
@@ -499,7 +525,7 @@ h2 {
 
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/IslandTrip/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/IslandTrip/">PLAY</a></div>
   <div></div>
 </div>
 <hr>
@@ -514,7 +540,7 @@ h2 {
 
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>SOLAR SYSTEM</h2></div>
+  <div class="h2-mimic">SOLAR SYSTEM</div>
   <div class="image-right"></div>
 </div>
 <p>
@@ -527,7 +553,7 @@ Controls:
 </p>
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/SolarSystem/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/SolarSystem/">PLAY</a></div>
   <div></div>
 </div>
 
@@ -535,7 +561,7 @@ Controls:
 <hr>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>BOX SHOOTER</h2></div>
+  <div class="h2-mimic">BOX SHOOTER</div>
   <div class="image-right"></div>
 </div>
 <p>
@@ -552,7 +578,7 @@ Controls:
 </p>
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/BoxShooter/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/BoxShooter/">PLAY</a></div>
   <div></div>
 </div>
 
@@ -561,7 +587,7 @@ Controls:
 <hr>
 <div class="grid-container-top">
   <div class="image-left"></div>
-  <div><h2>ROLLER MADNESS</h2></div>
+  <div class="h2-mimic">ROLLER MADNESS</div>
   <div class="image-right"></div>
 </div>
 <p>
@@ -575,7 +601,7 @@ Controls:
 </p>
 <div class="grid-container-bottom">
   <div></div>
-  <div><a href="/RollerMadness/" style="background-color:#B38F50;border:8px solid rgba(83,87,84,.9);font-size:130%;border-radius:24px;text-align:center;">PLAY</a></div>
+  <div><a href="/RollerMadness/">PLAY</a></div>
   <div></div>
 </div>
 
