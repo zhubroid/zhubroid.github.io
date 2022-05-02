@@ -24,6 +24,18 @@ hr.separator {
   border-top: 6px dotted #C19D5A;
   border-bottom: 0px
 }
+.header {
+  position: relative;
+  text-align: center;
+}
+.header_shift {
+  color: #3d3d40;
+  position: absolute;
+  left: 10%;
+  top: 25px;
+  font-size: 80%;
+  pointer-events: none;
+}
 .button {
   text-align: center;
   color: Tomato;
@@ -39,6 +51,10 @@ hr.separator {
   text-align: center;
   font-size: 150%;
   font-style: bold;
+}
+.grid-container-header {
+  display: grid;
+  grid: auto / 0.5fr auto 0.5fr;
 }
 .grid-container-top {
   display: grid;
@@ -77,9 +93,18 @@ hr.separator {
 <body style="background-color:#535754;color:#d0d1db;">
 
 
-
-<p style="text-align: center;">Tap moving bugs to PLAY</p>
-<img src="Data/zhubroid.png" alt="Zhubroid" style="width:200px;" class="center">
+<div class="grid-container-header">
+  <div></div>
+  <div class="header">
+    <i class="header_shift">
+      Hi, I'm Zhubroid!
+      <br>Enjoy my small games below :)
+      <br>Tap moving bugs to PLAY.
+    </i>
+    <img src="https://zhubroid.github.io/Data/zhubroid.png" alt="Zhubroid" style="width:200px;" class="center">
+  </div>
+  <div></div>
+</div>
 <h1 style="background-color:tomato;">Jam Games</h1>
 <p>Simple 2-hours builds, some with further 2-days polishing.</p>
 <hr class="separator">
