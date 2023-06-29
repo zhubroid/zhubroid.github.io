@@ -954,14 +954,16 @@ var UnityLoader = UnityLoader || {
   },
   scheduleBuildDownloadJob: function (Module, jobId, urlId) {
     UnityLoader.Progress.update(Module, jobId);
+    var url = Module.resolveBuildUrl(Module[urlId]);
+    var cacheControl = typeof Module.cacheControl == "function" ? Module.cacheControl(url) : Module.cacheControl ? Module.cacheControl[urlId] || Module.cacheControl["default"] : "no-cache";
     UnityLoader.Job.schedule(Module, jobId, [], UnityLoader.downloadJob, {
-      url: Module.resolveBuildUrl(Module[urlId]),
+      url: url,
       onprogress: function(e) { UnityLoader.Progress.update(Module, jobId, e); },
       onload: function(e) { UnityLoader.Progress.update(Module, jobId, e); },
-      objParameters: Module.companyName && Module.productName && Module.cacheControl && (Module.cacheControl[urlId] || Module.cacheControl["default"]) ? {
+      objParameters: Module.companyName && Module.productName && cacheControl && cacheControl != "no-cache" ? {
         companyName: Module.companyName,
         productName: Module.productName,
-        cacheControl: Module.cacheControl[urlId] || Module.cacheControl["default"],
+        cacheControl: cacheControl,
       } : null,
     });
     
@@ -1043,6 +1045,7 @@ var UnityLoader = UnityLoader || {
       Module.canvas.style.width = "100%";
       Module.canvas.style.height = "100%";
       Module.canvas.addEventListener("contextmenu", function (e) { e.preventDefault() }),
+      Module.canvas.addEventListener("dragstart", function (e) { e.preventDefault() }),
       Module.canvas.id = "#canvas";
       container.appendChild(Module.canvas);
       Module.deinitializers.push(function(){
@@ -1386,7 +1389,9 @@ var UnityLoader = UnityLoader || {
           cache.revalidated = true;
           unityCache.execute(XMLHttpRequestStore.name, "put", [cache.result]);
           log("'" + cache.result.url + "' successfully revalidated and served from the indexedDB cache");
-        } else if (xhr.status == 200) {
+        } else if (xhr.status != 200) {
+          log("'" + cache.result.url + "' request failed with status: " + xhr.status + " " + xhr.statusText);
+        } else if (xhr.getResponseHeader("Last-Modified") || xhr.getResponseHeader("ETag")) {
           cache.result = createXMLHttpRequestResult(cache.result.url, cache.company, cache.product, cache.result.accessed, xhr);
           cache.revalidated = true;
           unityCache.execute(XMLHttpRequestStore.name, "put", [cache.result], function (result) {
@@ -1394,8 +1399,6 @@ var UnityLoader = UnityLoader || {
           }, function (error) {
             log("'" + cache.result.url + "' successfully downloaded but not stored in the indexedDB cache due to the error: " + error);
           });
-        } else {
-          log("'" + cache.result.url + "' request failed with status: " + xhr.status + " " + xhr.statusText);
         }
       }.bind(this));
     };
